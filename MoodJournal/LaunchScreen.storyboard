@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XuG-rl-GhK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cuv-N7-ZAb">
+                                        <rect key="frame" x="136.66666666666666" y="366" width="119.99999999999997" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="4gn-YJ-e7O"/>
+                                            <constraint firstAttribute="height" constant="120" id="zMr-GC-ipf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BV-62-P12">
+                                        <rect key="frame" x="87.000000000000014" y="500.99999999999994" width="219.33333333333337" height="44.333333333333314"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="MoodJournal">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="37" name="Arial-Black"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.97647058823529409" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cuv-N7-ZAb" firstAttribute="centerY" secondItem="XuG-rl-GhK" secondAttribute="centerY" id="8Ln-Ce-aG3"/>
+                                    <constraint firstItem="cuv-N7-ZAb" firstAttribute="centerX" secondItem="XuG-rl-GhK" secondAttribute="centerX" id="SN8-og-v2e"/>
+                                    <constraint firstItem="3BV-62-P12" firstAttribute="centerX" secondItem="XuG-rl-GhK" secondAttribute="centerX" id="cJ2-Ij-W1v"/>
+                                    <constraint firstItem="3BV-62-P12" firstAttribute="top" secondItem="cuv-N7-ZAb" secondAttribute="bottom" constant="15" id="gIb-IL-gFe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XuG-rl-GhK" secondAttribute="trailing" id="8VT-9Q-Hx4"/>
+                            <constraint firstItem="XuG-rl-GhK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="YKq-YA-HT6"/>
+                            <constraint firstItem="XuG-rl-GhK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="cNU-FL-AcP"/>
+                            <constraint firstAttribute="bottom" secondItem="XuG-rl-GhK" secondAttribute="bottom" id="i9R-0H-mHr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashLogo" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>
